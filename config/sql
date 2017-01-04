@@ -1,0 +1,6 @@
+create table user (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, username VARCHAR(30), email varchar(30));
+
+
+ALTER TABLE user ADD CONSTRAINT username UNIQUE (username);
+ALTER TABLE user ADD CONSTRAINT email UNIQUE (email);
+ALTER TABLE user ADD CONSTRAINT username_email UNIQUE (username,email);
