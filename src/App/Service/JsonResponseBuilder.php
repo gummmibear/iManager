@@ -8,9 +8,7 @@
 
 namespace App\Service;
 
-
-use Psr\Http\Message\MessageInterface;
-use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\{MessageInterface, ResponseInterface};
 
 class JsonResponseBuilder
 {

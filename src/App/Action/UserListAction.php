@@ -4,8 +4,10 @@ namespace App\Action;
 
 use App\Service\JsonResponseBuilder;
 use Doctrine\ORM\EntityRepository;
-use Psr\Http\Message\ServerRequestInterface;
-use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\{
+    ServerRequestInterface,
+    ResponseInterface
+};
 
 class UserListAction
 {

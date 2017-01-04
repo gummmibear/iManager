@@ -2,8 +2,10 @@
 
 namespace App\Action;
 
-use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\{
+    EntityManager,
+    EntityRepository
+};
 use Interop\Container\ContainerInterface;
 use App\Entity\User;
 

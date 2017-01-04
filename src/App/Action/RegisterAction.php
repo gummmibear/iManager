@@ -41,6 +41,7 @@ class RegisterAction
             return $response->withStatus(409, 'User or email exist');
 
         } catch (\Exception $exception) {
+            throw $exception;
             return $response->withStatus(500, 'What the hell?');
         }
     }

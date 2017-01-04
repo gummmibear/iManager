@@ -1,8 +1,6 @@
 <?php
 namespace App\Middleware;
 
-
-
 use App\Entity\User;
 use Doctrine\ORM\EntityManager;
 use Interop\Container\ContainerInterface;

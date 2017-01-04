@@ -2,10 +2,16 @@
 namespace App\Middleware;
 
 use Doctrine\ORM\EntityRepository;
-use Firebase\JWT\ExpiredException;
-use Firebase\JWT\JWT;
-use Psr\Http\Message\ServerRequestInterface;
-use Psr\Http\Message\ResponseInterface;
+
+use Firebase\JWT\{
+    ExpiredException,
+    JWT
+};
+use Psr\Http\Message\{
+    ServerRequestInterface,
+    ResponseInterface
+};
+
 use Zend\Stratigility\MiddlewareInterface;
 
 class JwtAuth implements MiddlewareInterface

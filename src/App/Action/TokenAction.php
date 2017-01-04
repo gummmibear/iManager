@@ -5,8 +5,10 @@ namespace App\Action;
 use App\Service\JsonResponseBuilder;
 use Doctrine\ORM\EntityRepository;
 use Firebase\JWT\JWT;
-use Psr\Http\Message\ServerRequestInterface;
-use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\{
+    ServerRequestInterface,
+    ResponseInterface
+};
 use App\Service\JwtPayload;
 use App\Entity\User;
 
