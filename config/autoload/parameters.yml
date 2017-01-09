@@ -1,0 +1,5 @@
+parameters:
+  db_host: db_api
+  db_user: root
+  db_password: root
+  db_name: imanager
