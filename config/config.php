@@ -10,10 +10,11 @@
  */
 
 $config = [];
-$providerFactory = new \App\ConfigManager\ConfigFileProviderFactory(__DIR__ . '/../config/autoload/');
-$providerManager = new \App\ConfigManager\ConfigFileProviderManager($providerFactory);
 
-$configManager = new \App\ConfigManager\ConfigManager(__DIR__);
+$providerFactory = new Zend\Expressive\Config\ConfigFileProviderFactory(__DIR__ . '/../config/autoload/');
+$providerManager = new Zend\Expressive\Config\ConfigFileProviderManager($providerFactory);
+
+$configManager = new Zend\Expressive\Config\ConfigManager(__DIR__);
 $configManager->registerProviders($providerManager->createDefaultProviders());
 
 $config = $configManager->getConfig();

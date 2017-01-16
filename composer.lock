@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ca36f39d050afe745156c9ac878b847d",
-    "content-hash": "3810d25f57d7c8f8ca6513e58e421ed6",
+    "hash": "3b95a5015fae6f7d7d7ae6daab4f5778",
+    "content-hash": "67b8754df1afa2cc16d85915329ea08d",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -716,6 +716,57 @@
             "time": "2016-08-31 23:16:29"
         },
         {
+            "name": "gummmibear/ze-config-manager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gummmibear/ze-config-manager.git",
+                "reference": "68ff9a61ca1e63a4ba76dea1f05b5b322015190b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gummmibear/ze-config-manager/zipball/68ff9a61ca1e63a4ba76dea1f05b5b322015190b",
+                "reference": "68ff9a61ca1e63a4ba76dea1f05b5b322015190b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "symfony/yaml": "~3.0",
+                "zendframework/zend-stdlib": "^3.1"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Expressive\\Config\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dawid Jurga",
+                    "email": "dawidjurga@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Zend Expressive Config Manager",
+            "homepage": "https://github.com/gummmibear/",
+            "keywords": [
+                "config",
+                "expressive",
+                "php",
+                "yaml",
+                "zend"
+            ],
+            "time": "2017-01-16 00:05:01"
+        },
+        {
             "name": "http-interop/http-middleware",
             "version": "0.2.1",
             "source": {
@@ -917,7 +968,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/e51e8d385220844905c299d249736c0d9fe1f42c",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/8b674956ac0ca9b4c90a98197f244cf81079e084",
                 "reference": "e51e8d385220844905c299d249736c0d9fe1f42c",
                 "shasum": ""
             },
@@ -1212,6 +1263,55 @@
                 "shim"
             ],
             "time": "2016-11-14 01:06:16"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v3.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "9da375317228e54f4ea1b013b30fa47417e84943"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/9da375317228e54f4ea1b013b30fa47417e84943",
+                "reference": "9da375317228e54f4ea1b013b30fa47417e84943",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-11-18 21:05:29"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -2829,55 +2929,6 @@
             "time": "2016-09-01 23:53:02"
         },
         {
-            "name": "symfony/yaml",
-            "version": "v3.1.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "9da375317228e54f4ea1b013b30fa47417e84943"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/9da375317228e54f4ea1b013b30fa47417e84943",
-                "reference": "9da375317228e54f4ea1b013b30fa47417e84943",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2016-11-18 21:05:29"
-        },
-        {
             "name": "webmozart/assert",
             "version": "1.1.0",
             "source": {
@@ -2932,7 +2983,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "roave/security-advisories": 20,
-        "firebase/php-jwt": 20
+        "firebase/php-jwt": 20,
+        "gummmibear/ze-config-manager": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
